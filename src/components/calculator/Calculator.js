@@ -31,24 +31,47 @@ function Calculator() {
     };
 
     return (
-        <div>
-            <input 
-                data-testid="number1"
-                type="number" 
-                value={number1} 
-                onChange={(e) => setNumber1(parseFloat(e.target.value))} 
-            />
-            <input 
-                data-testid="number2"
-                type="number" 
-                value={number2} 
-                onChange={(e) => setNumber2(parseFloat(e.target.value))} 
-            />
-            <button onClick={() => handleCalculation('add')}>Add</button>
-            <button onClick={() => handleCalculation('subtract')}>Subtract</button>
-            <button onClick={() => handleCalculation('divide')}>Divide</button>
-            <p>Result: {result}</p>
-        </div>
+<div style={{marginBottom:'13em'}}>
+  <input 
+    style={{ fontSize: '1.3em', padding: '10px', margin: '5px', width: '50%' }}
+    data-testid="number1"
+    type="number" 
+    value={number1} 
+    onChange={(e) => setNumber1(parseFloat(e.target.value))} 
+  />
+  <input 
+    style={{ fontSize: '1.3em', padding: '10px', margin: '5px', width: '50%' }}
+    data-testid="number2"
+    type="number" 
+    value={number2} 
+    onChange={(e) => setNumber2(parseFloat(e.target.value))} 
+  />  <br/>
+    <p style={{ fontSize: '1.3em' }}>
+    Result: {result}
+  </p>
+  <br/>
+
+  <button 
+    style={{ fontSize: '1em', padding: '10px', margin: '10px', width: '100px' }}
+    onClick={() => handleCalculation('add')}
+  >
+    Add
+  </button>
+  <button 
+    style={{ fontSize: '1em', padding: '10px', margin: '10px', width: '100px' }}
+    onClick={() => handleCalculation('subtract')}
+  >
+    Subtract
+  </button>
+  <button 
+    style={{ fontSize: '1em', padding: '10px', margin: '10px', width: '100px' }}
+    onClick={() => handleCalculation('divide')}
+  >
+    Divide
+  </button>
+
+</div>
+
     );
 }
 

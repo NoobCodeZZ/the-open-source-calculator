@@ -30,9 +30,9 @@ jobs:
     - name: Build
       run: npm run build
 
-    - name: Vercel Deployment
+    - name: Vercel Action
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-      uses: vercel/action@20.1.1
+      uses: amondnet/vercel-action@v25.1.1   
       with:
         vercel-token: ${{ secrets.VERCEL_TOKEN }}
         vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}

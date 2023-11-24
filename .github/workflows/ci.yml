@@ -1,4 +1,4 @@
-name: Next.js CI
+name: Next.js CI and Deployment
 
 on:
   push:
@@ -15,10 +15,25 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build
-    - run: npm test
+
+    - name: Install Dependencies
+      run: npm ci
+
+    - name: Run Tests
+      run: npm test
+
+    - name: Build
+      run: npm run build
+
+    - name: Vercel Deployment
+      if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+      uses: vercel/action@20.1.1
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}

@@ -1,7 +1,7 @@
 // src/functions.js
 
 export function add(a, b) {
-    return a + b;
+    return a + b+1;
 }
 
 export function subtract(a, b) {

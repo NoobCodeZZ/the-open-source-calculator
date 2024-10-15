@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# THE OPEN SOURCE CALCULATOR
 
-## Getting Started
+### Project Description
 
-First, run the development server:
+This is an open-source calculator application built using Next.js. It allows users to perform basic arithmetic operations easily and showcases features of a modern frontend project. The user interface is simple, with two input fields for numbers, a result display, and buttons for different arithmetic operations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Perform arithmetic operations: addition, subtraction, multiplication, and division.
+- Responsive and intuitive user interface with a minimalist design.
+- Built using Next.js, styled with Tailwind CSS (or any other styling tech you're using).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### User Interface
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The calculator has a sleek, dark-themed user interface:
 
-## Learn More
+- **Title**: "The Open-Source Calculator" at the top.
+- **Input Fields**: Two fields for users to enter numbers.
+- **Result Display**: Shows the result of the calculation.
+- **Operation Buttons**: Buttons for "Add", "Subtract", "Divide", each with a white background, black border, and grey text.
 
-To learn more about Next.js, take a look at the following resources:
+### Installation Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ay-bh/the-open-source-calculator.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd CICD-demo
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the calculator.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Usage Guide
 
-## Deploy on Vercel
+- Enter two numbers in the input fields and choose an operation by clicking on one of the buttons (Add, Subtract, or Divide) to see the result below the input fields.
+- Example: To add 5 and 10, enter "5" in the first input, "10" in the second input, and click on the "Add" button to see the result "15" displayed below.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+
+### How to Contribute
+
+Please refer to our [Contribution Guidelines](https://github.com/ay-bh/CICD-demo/blob/main/CONTRIBUTING.md) to get started with contributing to this project.
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/ay-bh/CICD-demo/blob/main/LICENSE) file for details.
